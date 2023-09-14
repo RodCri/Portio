@@ -192,6 +192,17 @@ body{
           color: v.$txt-nav;
           margin-bottom: 2rem;
           font-weight: 300;
+          padding-left: 3rem;
+          position: relative;
+          &::after{
+            content: '';
+            width: 20px;
+            height: 2px;
+            background-color: #343a40;
+            position: absolute;
+            left: 0;
+            top: 13px;
+          }
         }
         .info__profile{
           font-size: 4rem;
@@ -480,6 +491,17 @@ body{
       font-size: 2rem;
       margin-bottom: 1.5rem;
       font-weight: 300;
+      padding-left: 3rem;
+      position: relative;
+      &::after{
+        content: '';
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        background-color: #343a40;
+        left: 0;
+        top: 13px;
+      }
     }
     &__title{
       margin-bottom: 1.5rem;
@@ -553,6 +575,297 @@ body{
       display: block;
       
       object-fit: cover;
+    }
+  }
+  .portafolio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+    background-color: #f1f6f9;
+    &__subtitle{
+      color: #404d79;
+      font-family: poppins,sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      font-weight: 300;     
+    }
+    &__title{
+      margin-bottom: 1.5rem;
+      font-family: yeseva one,cursive;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #404d79;
+      font-size: 5rem;
+    }
+    &__container{
+      margin: 1rem auto;
+      max-width:960px;
+      @media(min-width:920px){
+        column-count: 2;
+        gap: 5rem;
+      }
+      @media(min-width:1024px){
+        gap: 10rem;
+      }
+      .card__portafolio{
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        color: #404d79;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem 0;
+        .portafolio__prod{
+          display: flex;
+          cursor: pointer;
+          border-radius: 1rem;
+          &:hover{
+            box-shadow: 0 0 40px 0 rgb(132, 131, 131);
+          }
+          .product{
+            width: 100%;
+            border-radius: 1rem;
+          }
+        }
+        .portafolio__tecnology{
+          color: #95979b;
+          font-size: 1.8rem;
+          line-height: 1;
+         
+        }
+        .portafolio__name{
+          font-size: 3rem;
+          font-family: yeseva one,cursive;
+          font-weight: 500;
+        }
+        .portafolio__details{
+          text-align: center;
+          display: inline-block;
+          color: #5d78ff;
+          position: relative;
+          transform: scaleY(0);
+          transform-origin: bottom center;
+          transition: all .3s ease;
+          font-style: italic;
+          position: relative;
+          &::after{
+            content: '';
+            width: 20px;
+            height: 2px;
+            background-color: #5d78ff;
+            position: absolute;
+            left: -25px;
+            bottom: 10px;
+          }
+        }
+        &:hover{
+          .portafolio__details{
+            transform: scaleY(1);
+          }
+        }
+      }
+
+    }
+  }
+  .skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 5rem auto;
+    padding: 2rem;
+    @media(min-width:1000px){
+      width: 80%;
+      flex-direction: row;
+      gap: 8rem;
+      justify-content: center;
+      align-items: center;
+    }
+    &__fig{
+      width: 100%;
+      max-width: 560px;
+      .skill-fig{
+        width: 100%;
+        -webkit-mask: url('../img//skill-mask-svg.svg');
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        -webkit-mask-position: center center;
+      }
+      @media(min-width:1000px){
+        width: 60%;
+      }
+    }
+    &__info{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .skills__subtitle{
+        font-size: 2rem;
+        color: #343a40;
+        font-weight: 300;
+        position: relative;
+        padding-left: 3rem;
+        &::after{
+          content: '';
+          width: 20px;
+          height: 2px;
+          background-color: #343a40;
+          position: absolute;
+          left: 0px;
+          bottom: 13px;
+        }
+      }
+      .skills__title{
+        font-family: yeseva one,cursive;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #282f49;
+        font-size: 5rem;
+        max-width: 690px;
+      }
+      .skills__description{
+        font-family: poppins,sans-serif;
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.75;
+        color: #7e7e8a;
+        max-width: 600px;
+      }
+      .skills__progress{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .skill__progress_item{
+          .skill__name{
+            font-weight: 400;
+            line-height: 1.75;
+            color: #7e7e8a;
+            font-size: 1.7rem;
+          }
+          .skill__value{
+            float: right;
+            font-weight: 400;
+            line-height: 1.75;
+            color: #7e7e8a;
+            font-size: 1.7rem;
+          }
+          .progress{
+            width: 100%;
+            background: #f8f9fa;
+            height: 10px;
+            border-radius: 5px;
+            display: flex;
+            overflow: hidden;
+            line-height: 0;
+            margin-top: 1rem;
+            .progress-bar{
+              border-radius: 5px;
+              position: relative;
+              animation: animate-positive 3000ms;
+              background: #5d78ff;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              overflow: hidden;
+              color: #fff;
+              text-align: center;
+              white-space: nowrap;
+              background-color: #5d78ff;
+              transition: width .6s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+  .testimonials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 15rem 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f6f9;
+    position: relative;
+    &__background_shape{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      & svg path{
+        fill: #fff;
+      }
+    }
+    &__subtitle{
+      font-size: 2rem;
+      color: #343a40;
+      font-weight: 300;
+      position: relative;
+    }
+    &__title{
+      font-family: yeseva one,cursive;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #282f49;
+      font-size: 5rem;
+      max-width: 690px;
+      text-align: center;
+    }
+    .mySwiper2{
+      width: 70%;
+      height: 400px;
+      margin-top: 5rem;
+      .testimonial-slide{
+        max-width: 415px;
+        .testimonials__card{
+          width: 100%;
+          border-radius: 2rem;
+          padding: 4rem 4rem;
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          .testimonials__start{
+            margin-bottom: 1rem;
+          }
+          .testimonials__info{
+            font-family: poppins,sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 1.75;
+            color: #7e7e8a;
+          }
+          .testimonials__autor{
+            font-weight: 700;
+            color: #282f49;
+            font-size: 1.6rem;
+            padding-left: 2.8rem;
+            position: relative;
+            &::after{
+              content: '';
+              width: 20px;
+              height: 2px;
+              background-color: #282f49;
+              position: absolute;
+              left: 0;
+              top: 12px;
+            }
+            .date{
+              color: #95979b;
+              font-weight: 300;
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
     }
   }
 }

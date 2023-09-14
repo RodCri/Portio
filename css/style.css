@@ -213,6 +213,17 @@ body {
   color: rgb(52, 58, 64);
   margin-bottom: 2rem;
   font-weight: 300;
+  padding-left: 3rem;
+  position: relative;
+}
+.header .hero__content .content__info .info__wellcome::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #343a40;
+  position: absolute;
+  left: 0;
+  top: 13px;
 }
 .header .hero__content .content__info .info__profile {
   font-size: 4rem;
@@ -513,6 +524,17 @@ body {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   font-weight: 300;
+  padding-left: 3rem;
+  position: relative;
+}
+.content .services__subtitle::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  background-color: #343a40;
+  left: 0;
+  top: 13px;
 }
 .content .services__title {
   margin-bottom: 1.5rem;
@@ -583,6 +605,299 @@ body {
 .content .services swiper-slide img {
   display: block;
   object-fit: cover;
+}
+.content .portafolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0;
+  background-color: #f1f6f9;
+}
+.content .portafolio__subtitle {
+  color: #404d79;
+  font-family: poppins, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.content .portafolio__title {
+  margin-bottom: 1.5rem;
+  font-family: yeseva one, cursive;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #404d79;
+  font-size: 5rem;
+}
+.content .portafolio__container {
+  margin: 1rem auto;
+  max-width: 960px;
+}
+@media (min-width: 920px) {
+  .content .portafolio__container {
+    column-count: 2;
+    gap: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .content .portafolio__container {
+    gap: 10rem;
+  }
+}
+.content .portafolio__container .card__portafolio {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #404d79;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+}
+.content .portafolio__container .card__portafolio .portafolio__prod {
+  display: flex;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.content .portafolio__container .card__portafolio .portafolio__prod:hover {
+  box-shadow: 0 0 40px 0 rgb(132, 131, 131);
+}
+.content .portafolio__container .card__portafolio .portafolio__prod .product {
+  width: 100%;
+  border-radius: 1rem;
+}
+.content .portafolio__container .card__portafolio .portafolio__tecnology {
+  color: #95979b;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+.content .portafolio__container .card__portafolio .portafolio__name {
+  font-size: 3rem;
+  font-family: yeseva one, cursive;
+  font-weight: 500;
+}
+.content .portafolio__container .card__portafolio .portafolio__details {
+  text-align: center;
+  display: inline-block;
+  color: #5d78ff;
+  position: relative;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: all 0.3s ease;
+  font-style: italic;
+  position: relative;
+}
+.content .portafolio__container .card__portafolio .portafolio__details::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #5d78ff;
+  position: absolute;
+  left: -25px;
+  bottom: 10px;
+}
+.content .portafolio__container .card__portafolio:hover .portafolio__details {
+  transform: scaleY(1);
+}
+.content .skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 5rem auto;
+  padding: 2rem;
+}
+@media (min-width: 1000px) {
+  .content .skills {
+    width: 80%;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.content .skills__fig {
+  width: 100%;
+  max-width: 560px;
+}
+.content .skills__fig .skill-fig {
+  width: 100%;
+  -webkit-mask: url("../img//skill-mask-svg.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center center;
+}
+@media (min-width: 1000px) {
+  .content .skills__fig {
+    width: 60%;
+  }
+}
+.content .skills__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.content .skills__info .skills__subtitle {
+  font-size: 2rem;
+  color: #343a40;
+  font-weight: 300;
+  position: relative;
+  padding-left: 3rem;
+}
+.content .skills__info .skills__subtitle::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #343a40;
+  position: absolute;
+  left: 0px;
+  bottom: 13px;
+}
+.content .skills__info .skills__title {
+  font-family: yeseva one, cursive;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #282f49;
+  font-size: 5rem;
+  max-width: 690px;
+}
+.content .skills__info .skills__description {
+  font-family: poppins, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #7e7e8a;
+  max-width: 600px;
+}
+.content .skills__info .skills__progress {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.content .skills__info .skills__progress .skill__progress_item .skill__name {
+  font-weight: 400;
+  line-height: 1.75;
+  color: #7e7e8a;
+  font-size: 1.7rem;
+}
+.content .skills__info .skills__progress .skill__progress_item .skill__value {
+  float: right;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #7e7e8a;
+  font-size: 1.7rem;
+}
+.content .skills__info .skills__progress .skill__progress_item .progress {
+  width: 100%;
+  background: #f8f9fa;
+  height: 10px;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 1rem;
+}
+.content .skills__info .skills__progress .skill__progress_item .progress .progress-bar {
+  border-radius: 5px;
+  position: relative;
+  animation: animate-positive 3000ms;
+  background: #5d78ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #5d78ff;
+  transition: width 0.6s ease;
+}
+.content .testimonials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 15rem 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f6f9;
+  position: relative;
+}
+.content .testimonials__background_shape {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.content .testimonials__background_shape svg path {
+  fill: #fff;
+}
+.content .testimonials__subtitle {
+  font-size: 2rem;
+  color: #343a40;
+  font-weight: 300;
+  position: relative;
+}
+.content .testimonials__title {
+  font-family: yeseva one, cursive;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #282f49;
+  font-size: 5rem;
+  max-width: 690px;
+  text-align: center;
+}
+.content .testimonials .mySwiper2 {
+  width: 70%;
+  height: 400px;
+  margin-top: 5rem;
+}
+.content .testimonials .mySwiper2 .testimonial-slide {
+  max-width: 415px;
+}
+.content .testimonials .mySwiper2 .testimonial-slide .testimonials__card {
+  width: 100%;
+  border-radius: 2rem;
+  padding: 4rem 4rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.content .testimonials .mySwiper2 .testimonial-slide .testimonials__card .testimonials__start {
+  margin-bottom: 1rem;
+}
+.content .testimonials .mySwiper2 .testimonial-slide .testimonials__card .testimonials__info {
+  font-family: poppins, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #7e7e8a;
+}
+.content .testimonials .mySwiper2 .testimonial-slide .testimonials__card .testimonials__autor {
+  font-weight: 700;
+  color: #282f49;
+  font-size: 1.6rem;
+  padding-left: 2.8rem;
+  position: relative;
+}
+.content .testimonials .mySwiper2 .testimonial-slide .testimonials__card .testimonials__autor::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #282f49;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.content .testimonials .mySwiper2 .testimonial-slide .testimonials__card .testimonials__autor .date {
+  color: #95979b;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
