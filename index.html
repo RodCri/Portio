@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="landing page portafolio base challenge">
-  <meta name="keywords" content="landing, portafolio, challenge">
-  <meta name="author" content="Cristian Camilo Rodriguez">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="landing page portafolio base challenge" />
+  <meta name="keywords" content="landing, portafolio, challenge" />
+  <meta name="author" content="Cristian Camilo Rodriguez" />
   <title>Portio</title>
-  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Yeseva+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <header class="header">
     <nav class="nav">
-      <img src="img/logo.png" alt="icon logo" class="nav__logo">
+      <img src="img/logo.png" alt="icon logo" class="nav__logo" />
       <div class="nav__hamburguer">
-        <input type="checkbox" id="hamburger">
+        <input type="checkbox" id="hamburger" />
         <label for="hamburger" class="hamburger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </label>
       </div>
       <ol class="nav__options">
         <li class="options__item"><a href="#" class="item__link">Home</a></li>
-        <li class="options__item"><a href="#" class="item__link">About</a></li>
-        <li class="options__item"><a href="#" class="item__link">Service</a></li>
+        <li class="options__item">
+          <a href="#" class="item__link">About</a>
+        </li>
+        <li class="options__item">
+          <a href="#" class="item__link">Service</a>
+        </li>
         <li class="options__item"><a href="#" class="item__link">Work</a></li>
         <li class="options__item"><a href="#" class="item__link">Blog</a></li>
-        <li class="options__item item-bg"><a href="#" class="item__link link-w">Hire Me Now</a></li>
+        <li class="options__item item-bg">
+          <a href="#" class="item__link link-w">Hire Me Now</a>
+        </li>
       </ol>
     </nav>
     <section class="hero">
@@ -44,13 +54,16 @@
         <section class="content__info">
           <h3 class="info__wellcome">- Hello, I am Natasha</h3>
           <h1 class="info__profile">I am here for your personal business</h1>
-          <p class="info__description">Enjoy team diversity and increase their networks among others people in various fields by</p>
+          <p class="info__description">
+            Enjoy team diversity and increase their networks among others
+            people in various fields by
+          </p>
           <a href="" class="info__cta">Contact me</a>
         </section>
         <figure class="content__fig">
-          <img src="img/2960351.jpg" alt="" class="illustration">
+          <img src="img/2960351.jpg" alt="" class="illustration" />
           <div class="thumb">
-            <img src="img/popup-thumb.png" alt="" class="thumb1">
+            <img src="img/popup-thumb.png" alt="" class="thumb1" />
           </div>
         </figure>
       </div>
@@ -59,22 +72,91 @@
   <main class="content">
     <section class="about">
       <h2 class="about__title">About me</h2>
-      <p class="about__subtitle">Enjoy team diversity and increase their networks among others people in various fields by provided.</p>
+      <p class="about__subtitle">
+        Enjoy team diversity and increase their networks among others people
+        in various fields by provided.
+      </p>
       <div class="about__container">
         <figure class="about__fig">
-          <img src="img/about-img.jpg" alt="" class="about-img">
+          <img src="img/about-img.jpg" alt="" class="about-img" />
         </figure>
         <article class="about__info">
           <h3 class="info__profile">I design and build ultimate things.</h3>
-          <p class="info__description">I love to work in User Experience & User Interface designing. Because I love to solve the design problem and find easy and better solutions to solve it. I always try my best to make good user interface with the best user experience. I have been working as a Visual designer from.</p>
+          <p class="info__description">
+            I love to work in User Experience & User Interface designing.
+            Because I love to solve the design problem and find easy and
+            better solutions to solve it. I always try my best to make good
+            user interface with the best user experience. I have been working
+            as a Visual designer from.
+          </p>
           <div class="info__cta">
             <button class="cta">Hire me</button>
             <button class="cta cta-dw">Download CV</button>
-          </div> 
+          </div>
         </article>
       </div>
     </section>
+    <section class="services">
+      <div class="services__background">
+        <svg viewBox="0 0 1283 1126">
+          <path fill="#f1f6f9" d="M100 0h1183v1126l-1183-80A100 100 0 010 946V100A100 100 0 01100 0z"
+            data-name="Path 1369"></path>
+        </svg>
+      </div>
+      <h4 class="services__subtitle">-- Working Area</h4>
+      <h2 class="services__title">Creative Services</h2>
+      <p class="services__description">
+        Enjoy team diversity and increase their networks among others people
+        in various fields by provided.
+      </p>
+      <swiper-container class="mySwiper" slides-per-view="1" pagination="true" pagination-clickable="true"
+        space-between="10" loop="true">
+        <swiper-slide>
+          <figure class="services__fig">
+            <img src="img/ui-ux.svg" alt="" class="services__icon">
+          </figure>
+          <p class="services__name">UI/UX Design</p>
+          <p class="services__info">Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat.</p>
+        </swiper-slide>
+        <swiper-slide>
+          <figure class="services__fig">
+            <img src="img/web.svg" alt="" class="services__icon">
+          </figure>
+          <p class="services__name">Web Development</p>
+          <p class="services__info">Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat.</p>
+        </swiper-slide>
+        <swiper-slide>
+          <figure class="services__fig">
+            <img src="img/creative.svg" alt="" class="services__icon">
+          </figure>
+          <p class="services__name">Creative Design</p>
+          <p class="services__info">Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat.</p>
+        </swiper-slide>
+        <swiper-slide>
+          <figure class="services__fig">
+            <img src="img/branding.svg" alt="" class="services__icon">
+          </figure>
+          <p class="services__name">Branding</p>
+          <p class="services__info">Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat.</p>
+        </swiper-slide>
+        <swiper-slide>
+          <figure class="services__fig">
+            <img src="img/ui-ux.svg" alt="" class="services__icon">
+          </figure>
+          <p class="services__name">UI/UX Design</p>
+          <p class="services__info">Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat.</p>
+        </swiper-slide>
+      </swiper-container>
+    </section>
   </main>
-  <script src="js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
+
 </html>
